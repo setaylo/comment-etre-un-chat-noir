@@ -4,14 +4,14 @@ body {
 
 main {
   overflow-x: scroll;
-  white-space: nowrap;
   scroll-snap-type: x mandatory;
+  display: flex;
 }
 
 main > article {
   scroll-snap-align: start;
-  display: inline-block;
-  width: 100vw;
+  display: block;
+  min-width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
