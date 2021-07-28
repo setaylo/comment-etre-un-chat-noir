@@ -40,7 +40,8 @@ main > article {
 }
 
 .one-h2,
-.one-h3 {
+.one-h3,
+.two-h3 {
   margin-top: 1rem;
   font-size: 1rem;
   font-family: "STIX Two Math", serif;
@@ -48,12 +49,50 @@ main > article {
   margin-left: 1rem;
 }
 
-.one-h3 {
+.one-h3,
+.two-h3 {
   font-weight: 100;
+}
+
+.chat-nav {
+  transform: rotate(90deg);
+  margin-top: 15rem;
+  margin-left: 7rem;
 }
 
 #two {
   background-image: url(../media/Fish\ tag\ mobile.jpg);
+}
+
+.two-h1,
+.two-input {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: "STIX Two Math", serif;
+}
+
+button {
+  font-family: "STIX Two Math", serif;
+  font-weight: bold;
+}
+
+.name {
+  margin-left: 1rem;
+}
+
+.name-tag {
+  margin-top: 19rem;
+  width: 85vw;
+  text-align: center;
+  transform: rotate(-28deg);
+  font-size: 2rem;
+  font-family: "STIX Two Math", serif;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 1280px) {
