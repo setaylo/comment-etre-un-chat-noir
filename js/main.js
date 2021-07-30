@@ -12,3 +12,8 @@ function replaceName() {
 
 // Event
 button.addEventListener("click", replaceName);
+
+function nightfall() {
+  var element = document.getElementById("three");
+  element.classList.add("active");
+}

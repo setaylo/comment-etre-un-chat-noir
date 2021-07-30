@@ -42,12 +42,17 @@ main > article {
 
 .one-h2,
 .one-h3,
-.two-h3 {
+.two-h3,
+.three-h3 {
   margin-top: 1rem;
   font-size: 1rem;
   font-family: "STIX Two Math", serif;
   font-weight: bolder;
   margin-left: 1rem;
+}
+
+.three-h3 {
+  color: white;
 }
 
 .one-h3,
@@ -73,9 +78,15 @@ main > article {
 
 .two-h1,
 .two-input {
+  padding-bottom: 5rem;
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: "STIX Two Math", serif;
+}
+
+.two-input {
+  margin-top: -20rem;
+  padding-bottom: 17rem;
 }
 
 button {
@@ -119,8 +130,43 @@ a {
   transform: rotate(-25deg);
 }
 
+.two-h3 {
+  margin-top: 5.5rem;
+}
+
+.chat-3 {
+  display: block;
+  margin-top: -6.5rem;
+  margin-left: 6rem;
+  width: 70%;
+  height: 70%;
+}
+
 .chat-walk {
   display: none;
+}
+
+@keyframes nightfall {
+  0% {
+    background-color: rgb(167, 205, 253);
+  }
+  50% {
+    background-color: cornflowerblue;
+  }
+  100% {
+    background-color: darkblue;
+  }
+}
+
+#three {
+  background-color: (167, 205, 253);
+}
+
+.active {
+  animation-name: nightfall;
+  animation-duration: 3s;
+  animation-iteration-count: one;
+  animation-fill-mode: forwards;
 }
 
 @media (min-width: 1280px) {
@@ -171,7 +217,7 @@ a {
   }
 
   .two-h3 {
-    margin-top: 12rem;
+    margin-top: 8rem;
     text-align: center;
   }
 
@@ -180,6 +226,8 @@ a {
     font-family: "STIX Two Math", serif;
     display: flex;
     justify-content: center;
+    margin-top: -16rem;
+    padding-bottom: 14rem;
   }
 
   .nom-fish {
