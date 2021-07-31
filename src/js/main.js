@@ -15,7 +15,12 @@ button.addEventListener("click", replaceName);
 
 function nightfall() {
   var element = document.getElementById("three");
-  element.classList.add("active");
+  element.classList.add("active-nightfall");
+}
+
+function sunrise() {
+  var element = document.getElementById("five");
+  element.classList.add("active-sunrise");
 }
 
 function chatwalk() {
