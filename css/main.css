@@ -43,7 +43,8 @@ main > article {
 .one-h2,
 .one-h3,
 .two-h3,
-.three-h3 {
+.three-h3,
+.four-h3 {
   margin-top: 1rem;
   font-size: 1rem;
   font-family: "STIX Two Math", serif;
@@ -169,6 +170,38 @@ a {
   animation-fill-mode: forwards;
 }
 
+.button {
+  color: white;
+  background-color: darkblue;
+  font-size: 1rem;
+}
+
+.play {
+  display: none;
+}
+
+#four {
+  background-image: url(../media/page\ 4\ mobile\ background.jpg);
+}
+
+.four-link {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-family: "STIX Two Math", serif;
+  font-weight: bolder;
+}
+
+#five {
+  background-image: url(../media/Last\ mobile\ background.png);
+}
+
+.bed {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-left: 75vw;
+  margin-top: 30rem;
+}
+
 @media (min-width: 1280px) {
   #one {
     background-image: url(../media/chat_noir.jpg);
@@ -176,6 +209,10 @@ a {
 
   #two {
     background: rgb(167, 205, 253);
+  }
+
+  #three {
+    background-image: url(../media/cityscape.png);
   }
 
   .one-h1 {
@@ -243,5 +280,70 @@ a {
   .name-tag .nom {
     margin-top: 13rem;
     margin-left: 10rem;
+  }
+
+  .chat-3 {
+    display: none;
+  }
+
+  .three-h3 {
+    margin-left: 52vw;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    color: white;
+    background-color: darkblue;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+
+  .chat-walk {
+    margin-left: 100vw;
+    margin-top: -29rem;
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
+
+  .chat-play {
+    animation-name: chatwalk;
+    animation-duration: 2s;
+    animation-iteration-count: one;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes chatwalk {
+    0% {
+      margin-left: 100vw;
+    }
+    50% {
+      margin-left: 50vw;
+    }
+    100% {
+      margin-left: 0vw;
+    }
+  }
+
+  .play {
+    display: block;
+  }
+
+  #four {
+    background-image: url(../media/Page\ 4\ desktop\ background.jpg);
+  }
+
+  .four-h3 {
+    margin-top: 13rem;
+    font-size: 2rem;
+  }
+
+  .four-link {
+    margin-left: 1rem;
+    font-size: 3rem;
+    font-family: "STIX Two Math", serif;
+    font-weight: bolder;
   }
 }

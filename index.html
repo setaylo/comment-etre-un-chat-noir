@@ -38,13 +38,17 @@
       <article id="two">
         <h1 class="two-h1">COMMENT S'APPELLE LE CHAT NOIR?</h1>
         <div class="name-tag">
-          <img class="nom-fish" src="./media/Untitled_Artwork (3).png" alt="" />
+          <img
+            class="nom-fish"
+            src="./media/fish-tag-transparent.png"
+            alt="Badge du chat"
+          />
           <div class="nom">
             <div class="two-input">
               <input type="text" value="mettez son nom ici" />
               <button>SAUVEZ</button>
             </div>
-            <a href="#three" class="name fish">Nom</a>
+            <a href="#three" class="name fish" onclick="chatwalk()">Nom</a>
             <h3 class="two-h3">clickez sur le badge pour continuer</h3>
           </div>
         </div>
@@ -56,7 +60,7 @@
           </h3>
           <h3>
             Et il faut que vous aimiez vous promener
-            <button onclick="nightfall()">la nuit</button>
+            <button class="button" onclick="nightfall()">la nuit</button>
           </h3>
           <h3>Parce que le chat noir est curieux</h3>
         </div>
@@ -70,12 +74,34 @@
           src="./media/chat-3.png"
           alt="Le chat noir et la lune"
         />
-        <img class="chat-walk" src="./media/Untitled_Artwork.gif" alt="" />
+        <img
+          id="chat-walk"
+          class="chat-walk"
+          src="./media/delayed-chat-walk.gif"
+          alt="le chat noir se promene"
+        />
       </article>
-      <article id="four">four</article>
-      <article id="five">five</article>
-      <article id="six">six</article>
-      <article id="seven">seven</article>
+      <article id="four">
+        <div class="four-h3">
+          <h3>Si vous voulez etre un chat noir</h3>
+          <h3>Il faut que vous aimiez la nuit</h3>
+          <h3>Il faut que vous aimiez la lune</h3>
+        </div>
+        <div class="four-h3">
+          <h3>Il faut que vous ayez neuf vies,</h3>
+          <h3>comme tous les autres chats</h3>
+        </div>
+        <a class="four-link" href="#five">Et enfin...</a>
+      </article>
+      <article id="five">
+        <div class="four-h3">
+          <h3>Il faut que vous rentriez chez vous avant la fin de la nuit</h3>
+          <h3>parce que le chat noir est aime</h3>
+        </div>
+        <div class="bed">
+          <a href="#five" class="name">Nom</a>
+        </div>
+      </article>
     </main>
   </body>
 </html>
