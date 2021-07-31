@@ -237,11 +237,32 @@ a {
 }
 
 .mobile-z {
+  position: relative;
+  z-index: 999;
   margin-top: -100vh;
   margin-bottom: 27vh;
   margin-left: 35vw;
   height: 30%;
   width: 30%;
+  animation: shake 0.25s infinite;
+  animation-play-state: paused;
+}
+
+.mobile-z:hover {
+  animation: shake 0.25s infinite;
+  animation-play-state: running;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0.25rem);
+  }
+  50% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+    transform: translateX(0.5rem);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -420,5 +441,17 @@ a {
     font-size: 3rem;
     font-family: "STIX Two Math", serif;
     font-weight: bolder;
+  }
+
+  .mobile-z {
+    position: relative;
+    z-index: 999;
+    margin-top: -100vh;
+    margin-bottom: 33vh;
+    margin-left: 53vw;
+    width: 12.5%;
+    height: 40%;
+    animation: shake 0.25s infinite;
+    animation-play-state: paused;
   }
 }
